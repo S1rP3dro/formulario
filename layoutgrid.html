@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        table,th,td,tr,form{
+            border: 2px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://geracaotech.iel-ce.org.br/images/logo-geracao-tech.png" alt="logo programa">
+
+        <h1> Geração Tech - Desenvolvimento Front-End</h1>
+
+        <nav>
+            <a href="#listas">Tags de Listas</a>
+            <a href="#tabelas">Tags de Tabelas</a>
+            <a href="#formularios">Tags de Formulários</a>
+            <a href="">Tags de Divisões</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Exemplos de utilização das tags</h1>
+
+        <section id="listas">
+            <h2>Apresentação das listas</h2>
+    
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eos natus maxime, corrupti tempora voluptatibus?</p>
+        
+            <h3>Listas Ordenadas</h3>
+        
+            <ol type="A">
+                <li>Coisa</li>
+                <li>Coisa</li>
+                <li>Coisa</li>
+            </ol>
+        
+        
+            <h3>Listas Não Ordenadas</h3>
+        
+            <ul>
+                <li>Coisa</li>
+                <li>Coisa</li>
+                <li>Coisa</li>
+            </ul>
+        
+            <h3>Continuação das Listas Ordenadas</h3>
+        
+            <ol type="A" start=4>
+                <li>Outra Coisa</li>
+                <li>Outra Coisa</li>
+            </ol>
+        
+        </section>
+
+        <section id="tabelas">
+            <h2> Apresentação Tabelas</h2>
+    
+            <table>
+        
+                <!-- título das colunas -->
+                <tr>
+                    <th>coluna1</th>
+                    <th>coluna2</th>
+                    <th>coluna3</th>
+                </tr>       
+                
+                <!-- informações da tabela -->
+                <tr>
+                    <td>Info Linha1 Col1</td>
+                    <td>Info Linha1 Col2</td>
+                    <td>Info Linha1 Col3</td>
+                </tr>
+                <tr>
+                    <td>Info Linha2 Col1</td>
+                    <td>Info Linha2 Col2</td>
+                    <td>Info Linha2 Col3</td>
+                </tr>
+        
+                <tr>
+                    <td colspan="2">Info linha3 Col1/2</td>
+                    <td>Info Linha3 Col3</td>
+                </tr>
+        
+                <tr>
+                    <td rowspan="2">Info Linha 4/5 col1</td>
+                    <td>Info Linha 4 col2</td>
+                    <td>Info Linha 4 col3</td>
+                </tr>
+        
+                <tr>
+                    <td>Info linha 5 col2</td>
+                    <td>Info linha 5 col3</td>
+                </tr>
+        
+            </table>
+        </section>
+
+        <section id="formularios">
+            <h2>Apresentação Formulários</h2>
+    
+            <form action="#">
+        
+                <label for="meuID"> 
+                    Rótulo da informação a ser inserida
+                </label>
+                <br>
+                <input type="text" id="meuID">
+        
+                <br>
+                <label for="numero">
+                    Rótulo para numero
+                </label>
+                <br>
+                <input type="number" id="numero" value="1000">
+        
+                <br>
+                <label for="email">Rótulo para e-mail</label>
+                <br>
+                <input type="email" name="" id="email" placeholder="exemplo@email.com">
+        
+                <br>
+                <label for="senha">Rótulo para senha</label>
+                <br>
+                <input type="password" name="" id="senha">
+        
+                <br>
+                <label for="">Exemplo Caixas de seleção</label>
+                <br>
+                <input type="checkbox" name="selecao" id="f" value="LojaFeminino">
+                <label for="f">Loja Departamento Feminino</label>
+        
+                <input type="checkbox" name="selecao" id="m" value="LojaMasculino">
+                <label for="m">Loja Departamento Masculino</label>
+        
+                <br>
+                <label for="">Exemplo de seleção única</label>
+                <br>
+                <input type="radio" name="selecaoUnica" id="um" value="1">
+                <label for="um">Primeira opção</label>
+        
+                <br>
+                <input type="radio" name="selecaoUnica" id="dois" value="2">
+                <label for="dois">Segunda opção</label>
+        
+                <br>
+                <label for="testeSelect">Seleção por lista</label>
+                <br>
+                <select name="testeSelect" id="testeSelect">
+                    <option value="1" disabled>Um</option>
+                    <option value="2">Dois</option>
+                    <option value="3">Três</option>
+                </select>
+        
+                <br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="xingue aqui"></textarea>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Aplicação Flex box</h2>
+
+            <div class="container">
+
+                <div class="itemFlex vermelho">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, similique.
+
+                </div>
+                <div class="itemFlex verde">2</div>
+                <div class="itemFlex azul">3</div>
+
+            </div>
+        </section>
+           
+
+        <section>
+            <h2>Grid Bootstrap 5</h2>
+         <div>
+            <div class="row">
+                <div class="bg-danger col-1">1</div>
+                <div class="bg-info col-1">1</div>
+                <div class="bg-success col-6">6</div>
+                <div class="bg-warning col-6">6</div>
+
+            </div>
+
+            <div class="row">
+                <div class="bg-danger col-1">1</div>
+                <div class="bg-info col-1">1</div>
+                <div class="bg-success col-6">6</div>
+
+            </div>
+            <div></div>
+        </div>
+        </section>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+   
+
+
+
+
+    
+</body>
+</html>
